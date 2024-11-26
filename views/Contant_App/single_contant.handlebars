@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/single_contant.css">
+</head>
+<body>
+    {{#if payload}}
+    <h1>CONTANT INFO</h1>
+     <div class="list">
+         <span>first name:{{payload.fname}}</span>
+        <span>last name:{{payload.lname}}</span>
+        <span>number:{{payload.numr}}</span>
+        <span>saved location:{{payload.loc}}</span>
+     </div>
+     {{else}}
+     <h1>no Suc a contant</h1>
+     {{/if}}
+</body>
+</html>

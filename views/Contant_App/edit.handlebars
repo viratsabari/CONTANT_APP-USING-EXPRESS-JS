@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+      {{!-- <link rel="stylesheet" href="http://localhost:5000/api/style"> --}}
+      <link rel="stylesheet" href="/addcontent.css">
+</head>
+<body>
+  <fieldset>
+    <legend >update contant</legend>
+     <form action="/api/edit/{{editdata._id}}" align="center" method="post">
+        <label for="">FIRSTNAME</label>
+        <input type="text" name="fname" id="firatname" required value="{{editdata.fname}}">
+        <label for="">LASTNAME</label>
+        <input type="text" required name="lname" id="lastname"  value="{{editdata.lname}}" >
+        <label for="">CONTACT NUMBER</label>
+        <input type="number" pattern="[0-9]{10}" id="contant" name="numr"  value="{{editdata.numr}}">
+        <label for="">LOCATION</label>
+        <select id="location" name="loc" required  value="{{editdata.loc}}">
+            <option value="mobile">moblie</option>
+            <option value="sim">sim</option>
+            <option value="email">email</option>
+
+            </select>
+        <button>Edit  contant</button>
+     </form>
+  </fieldset>
+   
+</body>
+</html>
