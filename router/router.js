@@ -79,9 +79,8 @@ router.post('/edit/:id', async (req, res) => {
 });
 router.get('/delete/:id',async(req,res)=>{
       await cnt_schema.deleteOne({ _id: req.params.id })
-      res.redirect('Contant_App/viewcontant', { title: 'Edit Content'});
+      res.redirect('/api/viewcontant',302, { title: 'Edit Content'});
 })
-
 router.get('/pri/privacypolicy', (req, res) => {
     res.render('Contant_App/privacy',{ title: 'privacy policy'});
 });
