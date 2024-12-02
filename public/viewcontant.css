@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #1e90ff;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+li {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+li span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-info {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+.btn-info:hover {
+    background-color: #4c47b5;
+    transform: scale(1.1);
+}
+
+.btn-edit {
+    background-color: #00b894; 
+    color: #fff;
+}
+
+.btn-edit:hover {
+    background-color: #009874;
+    transform: scale(1.1);
+}
+
+.btn-delete {
+    background-color: #ff6b81; 
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background-color: #d6455c;
+    transform: scale(1.1);
+}
+
+h1:last-of-type {
+    color: #ff4d4f;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        width: 95%;
+        padding: 10px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        width: 100%;
+        padding: 8px;
+    }
+
+    li {
+        font-size: 12px;
+    }
+
+    a {
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/viewcontant.css">
+</head>
+<body>
+       <h1>The contants are</h1>
+       {{#each payload}}
+       <img src="" alt="">
+       <ul>
+        <li>first name:{{this.fname}}</li>
+        <li>last name:{{this.lname}}</li>
+        <li>number:{{this.numr}}</li>
+        <li>saved location:{{this.loc}}</li>
+         <li>
+        <span><a href="/api/{{this._id}}" class="btn-info">Info</a></span>
+            <span><a href="/api/edit/{{this._id}}" class="btn-edit">Edit</a></span>
+            <span><a href="/api/delete/{{this._id}}" class="btn-delete">Delete</a></span>
+       </li>
+       </ul>
+       {{else}}
+       <h1>no contants</h1>
+       {{/each}}
+      
+</body>
+</html>

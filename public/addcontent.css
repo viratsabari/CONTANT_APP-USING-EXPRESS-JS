@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+fieldset {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    margin: 20px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #1e90ff;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0c75c9;
+}
+
+
+@media (max-width: 768px) {
+    fieldset {
+        width: 90%;
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 18px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input, select {
+        padding: 7px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    fieldset {
+        width: 100%;
+        padding: 10px;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input, select {
+        padding: 6px;
+    }
+
+    button {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+}
